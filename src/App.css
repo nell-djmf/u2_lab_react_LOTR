@@ -2,17 +2,87 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: black;
   color: white;
 }
 
+
+.App-header {
+  float: left;
+  width: 30%;
+  height: 1600px;
+  background-color: #0C4C07;
+  background-image: url('https://i.pinimg.com/originals/b4/57/0f/b4570f86fed3521225a0d11a38a55e40.jpg');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-shadow: black 1px 0 10px;
+  font-size: 50px;
+  font-family: 'MedievalSharp', cursive;
+}
+
+main {
+  align-items: right;
+}
+
+.moviewrapper {
+  float: right;
+  width: 50%;
+  display: grid;  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 0.1fr 0.2fr 0.5fr; 
+  gap: 0px 10px; 
+  grid-template-areas: 
+    "a b"
+    "a c"
+    "a d"
+    "a e";
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
 img {
-  height: 200px;
+  height: 400px;
+  grid-area: a;
+  margin: auto;
+}
+
+.movietitle {
+  grid-area: b;
+  padding-top: 20%;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.runtime {
+  grid-area: c;
+}
+
+.trailer {
+  grid-area: d;
+  text-align: left;
+  text-decoration: none;
+  height: 20px;
+  width: 100px;
+  border: 1px solid grey;
+}
+
+a {
+  text-align: left;
+  color: white;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+.summary {
+  grid-area: e;
+  padding-bottom: 20%;
 }
